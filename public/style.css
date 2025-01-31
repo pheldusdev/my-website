@@ -1,0 +1,381 @@
+
+html,body {
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.list {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    display: flex;
+    padding: 0px;
+}
+
+.b2,.b3 {
+    margin-left: 50px;
+}
+
+.name {
+    text-shadow: 1px 1px 5px white;
+    font-size: 22px;
+    margin-right: 150px;
+}
+
+.categories {
+    box-shadow: 1px 1px 15px rgba(0, 104, 104, 0.603);
+    padding: 0 100px;
+    border-width: 1px;
+    border-color: rgba(0, 104, 104, 0.603);
+    border-style: solid;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    display: flex;
+    --un-bg-opacity: 0;
+    background-color: rgb(19, 19, 38, 70%);
+}
+
+.all {
+    max-width: 100%;
+    margin-left: 0%;
+    justify-content: center; 
+    height: 100vh; 
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.lol {
+    margin-top: 40px;
+    width: 200px;
+}
+
+.topmain {
+    max-width: 33%;
+    display: flex;
+}
+
+.list li {
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+.list li:hover {
+    transform: scale(1.2); 
+}
+
+.recently-listened {
+    box-shadow: 1px 1px 15px rgba(0, 104, 104, 0.603);
+    margin-top: 20px;
+    border-color: rgba(0, 104, 104, 0.603);
+    border-style: solid;
+    border-radius: 10px;
+    width: 39%;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(19, 19, 38, 70%);
+    padding: 20px;
+}
+
+.recently-listened p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.recently-listened li {
+    text-shadow: 1px 1px 5px white;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgba(0, 104, 104, 0.4); 
+    border-radius: 5px;
+    border: 1px solid rgba(0, 104, 104, 0.6); 
+}
+
+li {
+    list-style-type: none;
+}
+
+@media (max-width:320px){
+    html,body{
+        overflow: scroll;
+    }
+    .recently-listened {     
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .all {
+        margin-left: 0%;
+    }
+    .categories {
+        max-width: 90%;
+        padding: 0 10px;
+    }
+    .b2,.b3 {
+        margin-left: 30px;
+    }
+    .name {
+        margin-right: 10px;
+    }
+    .recently-listened {
+        padding: 20px;
+        margin: 10px 0;
+    }
+    
+}
+
+@media (min-width:320px) and (max-width:375px){
+    html,body{
+        overflow: scroll;
+    }
+    .recently-listened {     
+        width: 84%;
+    }
+    .all {
+        margin-left: 0%;
+    }
+    .categories {
+        max-width: 90%;
+        padding: 0 30px;
+    }
+    .b2,.b3 {
+        margin-left: 10px;
+    }
+    .name {
+        margin-right: 30px;
+    }
+    .recently-listened li {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .recently-listened {
+        padding: 20px;
+        margin: 10px 0;
+    }
+}
+@media (min-width:375px) and (max-width:425px){
+    html,body{
+        overflow: scroll;
+    }
+    .recently-listened {     
+        width: 87%;
+    }
+    .all {
+        margin-left: 0%;
+    }
+    .categories {
+        max-width: 90%;
+        padding: 0 30px;
+    }
+    .b2,.b3 {
+        margin-left: 30px;
+    }
+    .name {
+        margin-right: 30px;
+    }
+    .recently-listened li {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .recently-listened {
+        padding: 20px;
+        margin: 10px 0;
+    }
+}
+@media (min-width:425px) and (max-width:768px){
+    html,body{
+        overflow: scroll;
+    }
+    .recently-listened {     
+        width: 87%;
+    }
+    .categories {
+        width: fit-content;
+        padding: 0 30px;
+    }
+    .b2,.b3 {
+        margin-left: 50px;
+    }
+    .name {
+        margin-right: 50px;
+    }
+    .recently-listened li {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .recently-listened {
+        padding: 20px;
+        margin: 10px 0;
+    }
+}
+@media (min-width:768px) and (max-width:1024px){
+    html,body{
+        overflow: scroll;
+    }
+    .recently-listened {     
+        width: 87%;
+    }
+    .all {
+        margin-left: 10%;
+    }
+    .categories {
+        width: 85%;
+        padding: 0 30px;
+    }
+    .b2,.b3 {
+        margin-left: 50px;
+    }
+    .name {
+        margin-right: 50px;
+    }
+    .recently-listened li {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .recently-listened {
+        padding: 20px;
+        margin: 10px 0;
+    }
+    .topmain {
+        max-width: 90%;   
+    }
+}
+@media (min-width:1024px) and (max-width:1440px){
+    html,body{
+        overflow: scroll;
+    }
+    .categories {
+        width: 85%;
+        padding: 0 30px;
+    }
+    .b2,.b3 {
+        margin-left: 50px;
+    }
+    .name {
+        margin-right: 50px;
+    }
+    .recently-listened li {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .recently-listened {
+        width: 90%;
+        padding: 20px;
+        margin: 10px 0;
+    }
+    .topmain {
+        max-width: 90%;   
+    }
+}
+@media (min-width:1440px) and (max-width:2561px){
+    html,body{
+        overflow: scroll;
+    }
+    .categories {
+        width: fit-content;
+        padding: 0 100px;
+    }
+    .b2,.b3 {
+        margin-left: 50px;
+    }
+    .all{
+        margin-left: 32%;
+        align-items: center;
+        justify-content: center;
+    }
+    .name {
+        margin-right: 50px;
+    }
+    .recently-listened li {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .recently-listened {
+        min-width: 58.5%;
+        width: fit-content;
+        padding: 20px;
+        margin: 10px 0;
+    }
+    .topmain {
+        max-width: 60%;   
+    }
+}
+@media (min-width:2560px) and (max-width:3000px){
+    html,body{
+        overflow: scroll;
+    }
+    .categories {
+        width: fit-content;
+        padding: 0 100px;
+    }
+    .b2,.b3 {
+        margin-left: 50px;
+    }
+    .all{
+        margin-left: 40%;
+        align-items: center;
+        justify-content: center;
+    }
+    .name {
+        margin-right: 50px;
+    }
+    .recently-listened li {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .recently-listened {
+        min-width: 37%;
+        width: fit-content;
+        padding: 20px;
+        margin: 10px 0;
+    }
+    .topmain {
+        max-width: 39%;   
+    }
+    
+}
+@media (min-width:3000px){
+    html,body{
+        overflow: scroll;
+    }
+    .categories {
+        width: fit-content;
+        padding: 0 100px;
+    }
+    .b2,.b3 {
+        margin-left: 50px;
+    }
+    .all{
+        margin-left: 40%;
+        align-items: center;
+        justify-content: center;
+    }
+    .name {
+        margin-right: 50px;
+    }
+    .recently-listened li {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .recently-listened {
+        min-width: 28%;
+        width: fit-content;
+        padding: 20px;
+        margin: 10px 0;
+    }
+    .topmain {
+        max-width: 29%;   
+    }
+}

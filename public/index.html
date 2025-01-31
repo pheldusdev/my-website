@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pheldusdev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="all">
+    <header>
+        <article>
+            <div class="categories">
+                <ul class="list">
+                    <li class="name">pheldus</li>
+                    <li class="b1"><a href="">Home</a></li>
+                    <li class="b2">not rnn</li>
+                    <li class="b3">not rnn</li>
+                </ul>
+            </div>
+        </article>
+    </header>
+    <section class="main">
+        <article class="topmain">
+            <img src="hah.png" class="lol">
+            <p class="text">hi, i'm pheldus, a 17 year-old developer from Turkey. i'm currently working on game development with UE5 and CPP. in my free time, i spend time on development and have fun. i just bought this for uploadin my screenshots lol</p>
+        </article>
+        <div class="recently-listened">
+            <p>recently listened : </p>
+            <ul id="song-list"></ul>
+        </div>
+    </section>
+
+    <audio src="secrets.mp3" autoplay loop id="x"></audio>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let audio = document.getElementById("x");
+            audio.volume = 0.1; 
+        });
+    </script>
+    </div>
+</body>
+</html>
